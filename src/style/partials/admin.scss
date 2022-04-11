@@ -539,7 +539,7 @@
 }
 
 .edit-company {
-  padding: 48px 0 60px;
+  padding: 48px 16px 60px;
 
   @media (max-width: $mobile) {
     padding: 16px 26px;
@@ -568,15 +568,7 @@
       justify-content: space-around;
     }
   }
-  @media (max-width: $mobile) {
-    .main__btn-light {
-      @include adaptiveValue("width", 150, 120, 1);
-    }
-    .edit-company__title {
-      width: 120px;
-      //text-align: center;
-    }
-  }
+
   // .edit-company__title
   &__title {
     margin: 0;
@@ -675,10 +667,11 @@
   padding: 26px 48px;
   margin-bottom: 40px;
   @media (max-width: $mobile) {
-    padding: 40px 13px;
+    padding: 34px 24px;
   }
   @media (max-width: $mobileSmall) {
     border-radius: unset;
+    padding: 20px 16px;
   }
   &:not(.active) {
     display: none;
@@ -815,10 +808,6 @@
     }
   }
   @media (max-width: $mobile) {
-    .biggest-input {
-      height: 297px;
-      // padding: 100px 0;
-    }
     .step-s__input_text {
       font-size: 16px;
     }
@@ -845,11 +834,6 @@
       display: flex;
       align-items: center;
       gap: 48px;
-    }
-    @media (max-width: $mobile) {
-      .step-s__radio_inputs {
-        justify-content: space-between;
-      }
     }
     // .step-s__radio_label
     &_label {
@@ -928,14 +912,6 @@
   margin: 0;
 }
 
-.main {
-  // .main__btn-light
-  &__btn-light {
-  }
-  // .main__btn
-  &__btn {
-  }
-}
 .radio-label {
   display: flex;
   justify-content: center;
@@ -1781,16 +1757,6 @@
     &_btn {
       max-width: 120px;
     }
-  }
-}
-
-.main {
-  // .main__btn-light
-  &__btn-light {
-  }
-
-  // .main__btn
-  &__btn {
   }
 }
 
