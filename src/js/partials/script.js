@@ -10,9 +10,6 @@ const showHideButton = document.querySelector(".button__hide-show");
 const showHideText = document.querySelector(".text__hide-show");
 const showHideBlock = document.querySelector(".b-hide-show");
 
-
-textarea.addEventListener("input", autosize);
-
 function autosize() {
   var el = this;
   setTimeout(function () {
@@ -24,7 +21,9 @@ function autosize() {
   }, 0);
 }
 
-
+if (textarea) {
+  textarea.addEventListener("input", autosize);
+}
 
 if (showHideButton) {
   showHideButton.addEventListener("click", function (e) {
