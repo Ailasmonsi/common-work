@@ -170,7 +170,7 @@ function formSteps() {
       });
     } else {
       nextBtn.forEach((button) => {
-        button.innerHTML = "Следующий этап";
+        button.innerHTML = "Далее";
       });
     }
 
