@@ -20,19 +20,18 @@ const moduleBodyShort = document.querySelector(".module-s__body-short");
 const teacherBtn = document.querySelectorAll(".bacc");
 const conversionBlock = document.querySelectorAll(".item-conversion");
 
-teacherBtn.forEach(button => {
+teacherBtn.forEach((button) => {
   button.addEventListener("click", function (e) {
-    conversionBlock.forEach(block => {
-      block.classList.toggle('dis-n')
-    })
+    conversionBlock.forEach((block) => {
+      block.classList.toggle("dis-n");
+    });
   });
-})
+});
 
 if (moduleInputs) {
   moduleInputs.forEach((item) => {
     item.oninput = function () {
       if (this.value == "yes") {
-
         moduleBodyShort.style.display = "none";
         moduleBodyLong.style.display = "block";
       } else {
@@ -56,7 +55,7 @@ if (rangeInput) {
   };
 
   rangeInfo.oninput = function () {
-    rangeProgress.style.width = this.value + "%";
+    rangeProgress.style.width = this.value * 25 - 25 + "%";
     rangeInput.value = this.value;
   };
 
@@ -84,11 +83,11 @@ if (rangeInput) {
 if (rangeInputP) {
   rangeInputP.oninput = function () {
     rangeProgressP.style.width = this.value + "%";
-    rangeInfoP.value = this.value + '%';
+    rangeInfoP.value = this.value + "%";
   };
 
   rangeInfoP.oninput = function (params) {
-    rangeProgressP.style.width = this.value + "%";
+    rangeProgressP.style.width = this.value * 1 + 1 + "%";
     rangeInputP.value = this.value;
   };
 
