@@ -1,0 +1,324 @@
+//= template/inc/start.html
+//= template/inc/header.html
+
+<div class="admin">
+  <div class="container">
+    <div class="admin__main">
+      //= template/left-sidebar/admin-bar.html
+
+      <div class="companies">
+        <div class="companies__first-block companies-fb">
+          <h1 class="companies-fb__title main__title">
+            Компании <span class="main__title-grey">(345)</span>
+          </h1>
+          <form action="#" class="companies-fb__form">
+            <label>
+              <div class="companies-fb__form_text">Поиск</div>
+              <input class="companies-fb__form_input" type="text" />
+            </label>
+          </form>
+        </div>
+
+        <div class="companies__controls companies-ctrl">
+          <a href="#" class="companies-ctrl__add main__btn">
+            Добавить вручную
+          </a>
+          <div class="companies-ctrl__drop">
+            <label>
+              <input class="companies-ctrl__drop_input" type="file" />
+              <div class="companies-ctrl__drop_text main__btn">
+                Загрузить документ
+              </div>
+            </label>
+          </div>
+          <a href="#" download="" class="companies-ctrl__download">
+            Скачать образец
+          </a>
+          <div class="companies-ctrl__hide">
+            <button
+              type="button"
+              class="companies-ctrl__hide_btn main__btn-light"
+            >
+              Скрыть фильтры
+            </button>
+          </div>
+        </div>
+
+        <div class="companies__filters companies-f">
+          <div class="companies-f__subtitle main__text-neutral">
+            Где продается
+          </div>
+          <form action="#" class="companies-f__form">
+            <div class="companies-f__form_labels">
+              <label class="companies-f__on-self">
+                <input type="checkbox" name="on-self" id="on-self" />
+                <div class="companies-f__on-self_fake"></div>
+                <div class="companies-f__on-self_text">На своем сайте</div>
+                <div class="companies-f__on-self_border"></div>
+              </label>
+              <label class="companies-f__on-edwica">
+                <input type="checkbox" name="on-edwica" id="on-edwica" />
+                <div class="companies-f__on-edwica_fake"></div>
+                <div class="companies-f__on-edwica_text">На Edwica</div>
+                <div class="companies-f__on-edwica_border"></div>
+              </label>
+            </div>
+
+            <div class="companies-f__buttons">
+              <button class="companies-f__submit main__btn" type="submit">
+                Применить фильтры
+              </button>
+              <button class="companies-f__reset" type="reset">Очистить</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="companies__main">
+          <ul class="companies__list">
+            <li class="companies__item item-c">
+              <div class="item-c__image">
+                <img src="#" alt="" class="item-c__img" />
+              </div>
+              <div class="item-c__main">
+                <div class="item-c__title main__text-bold">
+                  ООО “МЭЙЛ-ГРУПП”
+                </div>
+                <div class="item-c__about">
+                  <div class="item-c__about_courses">
+                    <div class="item-c__about_text">Курсов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_vebinars">
+                    <div class="item-c__about_text">Вебинаров</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_students">
+                    <div class="item-c__about_text">Студентов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item-c__buttons">
+                <a
+                  href="edit-company.html"
+                  class="item-c__edit main__btn-light"
+                >
+                  Редактировать
+                </a>
+                <button type="button" class="item-c__reset">
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                      stroke="#EF3D32"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="companies__item item-c">
+              <div class="item-c__image">
+                <img src="#" alt="" class="item-c__img" />
+              </div>
+              <div class="item-c__main">
+                <div class="item-c__title main__text-bold">
+                  ООО “МЭЙЛ-ГРУПП”
+                </div>
+                <div class="item-c__about">
+                  <div class="item-c__about_courses">
+                    <div class="item-c__about_text">Курсов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_vebinars">
+                    <div class="item-c__about_text">Вебинаров</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_students">
+                    <div class="item-c__about_text">Студентов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item-c__buttons">
+                <a href="edit-company.html" class="item-c__edit main__btn-light">
+                  Редактировать
+                </a>
+                <button type="button" class="item-c__reset">
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                      stroke="#EF3D32"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="companies__item item-c">
+              <div class="item-c__image">
+                <img src="#" alt="" class="item-c__img" />
+              </div>
+              <div class="item-c__main">
+                <div class="item-c__title main__text-bold">
+                  ООО “МЭЙЛ-ГРУПП”
+                </div>
+                <div class="item-c__about">
+                  <div class="item-c__about_courses">
+                    <div class="item-c__about_text">Курсов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_vebinars">
+                    <div class="item-c__about_text">Вебинаров</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_students">
+                    <div class="item-c__about_text">Студентов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item-c__buttons">
+                <a href="edit-company.html" class="item-c__edit main__btn-light">
+                  Редактировать
+                </a>
+                <button type="button" class="item-c__reset">
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                      stroke="#EF3D32"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="companies__item item-c">
+              <div class="item-c__image">
+                <img src="#" alt="" class="item-c__img" />
+              </div>
+              <div class="item-c__main">
+                <div class="item-c__title main__text-bold">
+                  ООО “МЭЙЛ-ГРУПП”
+                </div>
+                <div class="item-c__about">
+                  <div class="item-c__about_courses">
+                    <div class="item-c__about_text">Курсов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_vebinars">
+                    <div class="item-c__about_text">Вебинаров</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_students">
+                    <div class="item-c__about_text">Студентов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item-c__buttons">
+                <a href="edit-company.html" class="item-c__edit main__btn-light">
+                  Редактировать
+                </a>
+                <button type="button" class="item-c__reset">
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                      stroke="#EF3D32"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="companies__item item-c">
+              <div class="item-c__image">
+                <img src="#" alt="" class="item-c__img" />
+              </div>
+              <div class="item-c__main">
+                <div class="item-c__title main__text-bold">
+                  ООО “МЭЙЛ-ГРУПП”
+                </div>
+                <div class="item-c__about">
+                  <div class="item-c__about_courses">
+                    <div class="item-c__about_text">Курсов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_vebinars">
+                    <div class="item-c__about_text">Вебинаров</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                  <div class="item-c__about_students">
+                    <div class="item-c__about_text">Студентов</div>
+                    <div class="item-c__about_span">124</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item-c__buttons">
+                <a href="edit-company.html" class="item-c__edit main__btn-light">
+                  Редактировать
+                </a>
+                <button type="button" class="item-c__reset">
+                  <svg
+                    width="14"
+                    height="20"
+                    viewBox="0 0 14 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                      stroke="#EF3D32"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+//= template/modals.html
+//= template/inc/end.html
