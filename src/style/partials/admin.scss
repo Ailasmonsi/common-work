@@ -875,8 +875,7 @@
       @include adaptiveValue("font-size", 16, 14, 1);
       @include adaptiveValue("line-height", 24, 14, 1);
       @include adaptiveValue("margin-bottom", 64, 48, 1);
-      @include adaptiveValue("padding-top", 10, 8, 1);
-      @include adaptiveValue("padding-bottom", 10, 8, 1);
+      padding: 10px 0;
       font-weight: 600;
       @media (max-width: $mobile) {
         max-width: unset;
