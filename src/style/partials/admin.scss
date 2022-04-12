@@ -952,6 +952,7 @@
     box-sizing: border-box;
     border-radius: 8px;
     transition: all 0.3s ease 0s;
+    flex: 0 0 16px;
     &::before {
       content: "";
       width: 8px;
@@ -1041,6 +1042,16 @@
   }
   &:not(:last-child) {
     border-bottom: 1px solid #efe8f8;
+  }
+}
+
+.ww {
+  width: 100%;
+}
+
+.modal-bp {
+  @media (max-width: $mobile) {
+    padding: 24px 16px !important;
   }
 }
 
@@ -1199,6 +1210,7 @@
   display: flex;
   align-items: center;
   gap: 24px;
+  overflow-x: auto;
   // .teacher-s__item
   &__item {
     display: flex;
@@ -1263,7 +1275,7 @@
     border: 2px dashed #e6e0fa;
     border-radius: 16px;
     height: 280px;
-    flex: 0 1 300px;
+    flex: 0 0 300px;
   }
 }
 
@@ -1292,7 +1304,7 @@
   }
 }
 
-.item-cs {//jdfs j
+.item-cs {
   background: #ffffff;
   border: 1px solid #efe8f8;
   border-radius: 16px;
@@ -1628,11 +1640,44 @@
     padding: 0 70px;
     @include adaptiveValue("margin-bottom", 16, 8, 1);
     gap: 34px;
+    @media (max-width: $mobile) {
+      padding: 0;
+    }
   }
   // .gp__text
   &__text {
     padding: 0 104px;
     @include adaptiveValue("margin-bottom", 48, 24, 1);
+    @media (max-width:$mobile){
+       margin: 0;
+       padding: 0; 
+    }
+  }
+}
+
+.ss {
+  @media (max-width:$mobileSmall){
+     width: 230px !important; 
+  }
+}
+
+.gp__chec {
+  @media (max-width: $mobile) {
+    background: #efe8f8;
+    padding: 11px 17px;
+    margin-bottom: 14px;
+  }
+}
+
+.gp__row {
+  @media (max-width:$tablet){
+    flex-direction: column;
+  }
+}
+
+.gp__roww {
+  @media (max-width:$tablet){
+    flex-direction: column-reverse;
   }
 }
 
