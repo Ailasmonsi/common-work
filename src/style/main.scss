@@ -230,7 +230,7 @@ h6 {
 
 .db {
   justify-content: space-between;
-  @include adaptiveValue("margin-bottom", 40, 20, 1); 
+  @include adaptiveValue("margin-bottom", 40, 20, 1);
 }
 
 .mt {
@@ -372,11 +372,17 @@ h6 {
   &__text-neutral {
     font-style: normal;
     font-weight: normal;
-    @include adaptiveValue("font-size", 14, 12, 1);
+    // @include adaptiveValue("font-size", , 12, 1);
+    font-size: 16px;
     @include adaptiveValue("line-height", 20, 16, 1);
     color: #a897bd;
   }
 
+  @media (max-width: $mobile) {
+    .main__input {
+      height: 268px;
+    } //Ninja
+  }
   // .main__input
   &__input {
     background: #ffffff;
@@ -546,11 +552,10 @@ h6 {
   margin: 20px auto;
   width: fit-content;
   border-radius: 20px !important;
-  @media (max-width:$pc){
-     margin: 20px; 
+  @media (max-width: $pc) {
+    margin: 20px;
   }
 }
-
 
 .wid {
   padding: 30px;
@@ -663,6 +668,12 @@ h6 {
   // .input__row-item
   &__row-item {
     flex: 1 1 auto;
+  }
+}
+@media (max-width: $mobile) {
+  .input__column {
+    flex-direction: column;
+    gap: 30px;
   }
 }
 
