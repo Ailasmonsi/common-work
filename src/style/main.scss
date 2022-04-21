@@ -201,6 +201,10 @@ h6 {
   margin: 0 !important;
 }
 
+.no-padding {
+  padding: 0 !important;
+}
+
 .wid-i {
   width: fit-content;
   height: fit-content;
@@ -372,8 +376,7 @@ h6 {
   &__text-neutral {
     font-style: normal;
     font-weight: normal;
-    // @include adaptiveValue("font-size", , 12, 1);
-    font-size: 16px;
+    @include adaptiveValue("font-size", 16, 12, 1);
     @include adaptiveValue("line-height", 20, 16, 1);
     color: #a897bd;
   }
@@ -414,6 +417,10 @@ h6 {
     @include adaptiveValue("font-size", 16, 14, 1);
     @include adaptiveValue("line-height", 24, 20, 1);
     color: #615473;
+
+    @media (max-width: $mobileSmall) {
+      width: auto;
+    }
     &:focus {
       outline: 2px solid #966cee;
     }
@@ -1012,3 +1019,4 @@ h6 {
 @import "partials/outside-teacher";
 @import "partials/admin";
 @import "partials/chat";
+@import "partials/teacher-cabinet";

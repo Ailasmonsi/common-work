@@ -1,7 +1,7 @@
 .admin {
   @include adaptiveValue("margin-top", 32, 16, 1);
   @include adaptiveValue("margin-bottom", 32, 16, 1);
-  padding-bottom: 300px;
+  @include adaptiveValue("padding-bottom", 300, 60, 1);
   // .admin__main
   &__main {
     display: flex;
@@ -415,7 +415,7 @@
 }
 .d-3-none {
   @media (max-width: $mobile) {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -847,6 +847,9 @@
       display: flex;
       align-items: center;
       gap: 48px;
+      @media (max-width: $mobile) {
+        gap: 24px;
+      }
     }
     // .step-s__radio_label
     &_label {
@@ -889,6 +892,9 @@
     align-items: center;
     justify-content: end;
     gap: 15px;
+    @media (max-width: $mobile) {
+      margin-top: 24px;
+    }
   }
   // .step-s__prev_btn
   &__prev_btn {
@@ -1043,6 +1049,14 @@
   &:not(:last-child) {
     border-bottom: 1px solid #efe8f8;
   }
+  @media (max-width: $mobile) {
+    &:first-child {
+      padding-bottom: 16px;
+    }
+    &:not(:first-child) {
+      padding: 16px 0;
+    }
+  }
 }
 
 .ww {
@@ -1065,12 +1079,20 @@
     display: flex;
     align-items: center;
     gap: 32px;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
   }
 
   // .step-s__select_label
   &__select_label {
     display: block;
     width: 320px;
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 }
 
@@ -1082,7 +1104,7 @@
     line-height: 28px;
     font-style: normal;
     @include adaptiveValue("font-size", 28, 20, 1);
-    @include adaptiveValue("font-size", 36, 28, 1);
+    @include adaptiveValue("line-height", 36, 28, 1);
     line-height: 36px;
     color: #392b4b;
     margin-bottom: 36px;
@@ -1280,7 +1302,6 @@
 }
 
 .courses {
-  flex: 1 1 auto;
 }
 
 .course-s {
@@ -1300,6 +1321,10 @@
       justify-content: space-between;
       gap: 8px;
       margin-bottom: 28px;
+      @media (max-width: em(1300)) {
+        flex-wrap: wrap;
+        justify-content: start;
+      }
     }
   }
 }
@@ -1311,6 +1336,30 @@
   display: grid;
   grid-template-columns: min-content auto;
   overflow: hidden;
+
+  @media (max-width: $tablet) {
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #efe8f8;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 12px 16px;
+    gap: 20px;
+    align-items: center;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  // .item-cs__con
+  &__con {
+    @media (max-width: $mobile) {
+      display: flex;
+      justify-content: start;
+      gap: 20px;
+    }
+  }
+
   // .item-cs__image
   &__image {
     background-color: #c4c4c4;
@@ -1318,6 +1367,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: $tablet) {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #c4c4c4;
+      flex: 0 0 60px;
+    }
+    @media (max-width: $mobile) {
+      flex: 0 0 50px;
+      width: 50px;
+      height: 50px;
+    }
   }
   // .item-cs__main
   &__main {
@@ -1325,10 +1387,24 @@
     gap: 12px;
     align-items: center;
     padding: 12px 45px 12px 24px;
+    @media (max-width: $pc) {
+      padding: 12px;
+      justify-content: space-between;
+    }
+    @media (max-width: $tablet) {
+      padding: 0;
+    }
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      width: 100%;
+    }
   }
   // .item-cs__top
   &__top {
     max-width: 280px;
+    @media (max-width: $mobile) {
+      max-width: 180px;
+    }
     // .item-cs__top_company
     &_company {
       margin-bottom: 4px;
@@ -1341,6 +1417,16 @@
     gap: 12px;
     align-items: center;
     flex: 1 1 auto;
+    @media (max-width: $mobile) {
+      padding: 0;
+      margin: 14px 0;
+      gap: 40px;
+      align-self: center;
+    }
+    @media (max-width: $mobileSmall) {
+      gap: 20px;
+    }
+
     // .item-cs__about_date
     &_date {
       display: flex;
@@ -1364,6 +1450,9 @@
     display: flex;
     align-items: center;
     gap: 20px;
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 }
 
@@ -1406,7 +1495,7 @@
   // .range__input
   &__input-p,
   &__input {
-    min-width: 320px;
+    @include adaptiveValue("min-width", 320, 160, 1);
     flex-grow: 1;
     height: 8px;
     outline: none;
@@ -1449,6 +1538,10 @@
     display: flex;
     align-items: center;
     gap: 14px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 24px;
+    }
   }
 }
 .sale {
@@ -1464,6 +1557,13 @@
     text-align: center;
     padding: 30px;
     max-width: 320px;
+    @media (max-width: $tablet) {
+      padding: 25px;
+    }
+    @media (max-width: $mobile) {
+      max-width: unset;
+      width: 100%;
+    }
   }
   // .sale__total-span
   &__total-span {
@@ -1502,6 +1602,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 8px;
+    @media (max-width: $mobile) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 
@@ -1648,16 +1751,16 @@
   &__text {
     padding: 0 104px;
     @include adaptiveValue("margin-bottom", 48, 24, 1);
-    @media (max-width:$mobile){
-       margin: 0;
-       padding: 0; 
+    @media (max-width: $mobile) {
+      margin: 0;
+      padding: 0;
     }
   }
 }
 
 .ss {
-  @media (max-width:$mobileSmall){
-     width: 230px !important; 
+  @media (max-width: $mobileSmall) {
+    width: 230px !important;
   }
 }
 
@@ -1670,13 +1773,13 @@
 }
 
 .gp__row {
-  @media (max-width:$tablet){
+  @media (max-width: $tablet) {
     flex-direction: column;
   }
 }
 
 .gp__roww {
-  @media (max-width:$tablet){
+  @media (max-width: $tablet) {
     flex-direction: column-reverse;
   }
 }

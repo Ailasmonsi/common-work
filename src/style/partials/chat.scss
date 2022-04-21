@@ -87,7 +87,6 @@
         }
       }
     }
-
     &:not(:last-child) {
       border-bottom: 1px solid #efe8f8;
     }
@@ -105,6 +104,26 @@
         box-shadow: inset 4px 0px 0px #966cee;
       }
     }
+    & p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  // .menu-chat__number
+  &__number {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-feature-settings: "tnum" on, "lnum" on;
+    color: #c4790a;
+    background: #faefdc;
+    border-radius: 37px;
+    padding: 1px 8px 3px;
   }
 }
 .chat-b {
@@ -137,7 +156,7 @@
   }
   // .chat-b__messages
   &__messages {
-    flex: 0 1 30%;
+    flex: 1 0 250px;
     border-right: 1px solid #efe8f8;
     box-sizing: border-box;
   }
@@ -207,6 +226,7 @@
   // .mes-chat__list
   &__list {
     margin: 0;
+    overflow-x: hidden;
     overflow-y: auto;
     max-height: 1000px;
   }
@@ -229,7 +249,7 @@
   &.unchecked {
     position: relative;
     &::after {
-      content: "1";
+      content: attr(data-unread);
       position: absolute;
       font-style: normal;
       font-weight: 500;
@@ -265,6 +285,9 @@
     top: 16px;
   }
 
+  // .per__info
+  &__info {
+  }
   // .per__avatar
   &__avatar {
     width: 56px;
@@ -288,6 +311,14 @@
     font-size: 12px;
     line-height: 16px;
     color: #392b4b;
+    max-width: 130px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em;
+    height: 3.9em;
+
     @media (max-width: $mobile) {
       @include adaptiveValue("width", 350, 150, 1);
     }
@@ -297,8 +328,14 @@
   padding: 32px 36px;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
-  min-height: 680px;
+  //overflow-y: auto;
+  //max-height: 680px;
+}
+.chat-b__con {
+  height: 680px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .chat-mm {
   width: fit-content;
@@ -365,6 +402,7 @@
   line-height: 24px;
   color: #ffffff;
   align-self: end;
+  overflow-wrap: anywhere;
 
   @media (max-width: $mobile) {
     max-width: unset;

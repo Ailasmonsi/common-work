@@ -246,7 +246,7 @@
   position: absolute;
   top: 50%;
   left: 8px;
-  transform: translate(0, -50%);
+  transform: translate(0, -50%) matrix(-1, 0, 0, 1, 0, 0);
   z-index: 2;
   background: #ffffff;
   overflow: hidden;
@@ -254,12 +254,13 @@
   width: 48px;
   height: 48px;
   box-shadow: 0px 6px 24px rgba(24, 29, 54, 0.1);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width:$mobile){
-     display: none; 
+  transition: all 0.3s ease 0s;
+  @media (max-width: $mobile) {
+    display: none;
   }
   &::after {
     position: absolute;
@@ -277,7 +278,7 @@
   position: absolute;
   top: 50%;
   right: 8px;
-  transform: translate(0, -50%);
+  transform: translate(0, -50%) matrix(-1, 0, 0, 1, 0, 0);
   z-index: 2;
   background: #ffffff;
   overflow: hidden;
@@ -285,12 +286,12 @@
   width: 48px;
   height: 48px;
   box-shadow: 0px 6px 24px rgba(24, 29, 54, 0.1);
-  transform: matrix(-1, 0, 0, 1, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width:$mobile){
-     display: none; 
+  transition: all 0.3s ease 0s;
+  @media (max-width: $mobile) {
+    display: none;
   }
   &::after {
     position: absolute;
@@ -306,10 +307,10 @@
 }
 
 .swiper-button-prev-s.swiper-button-disabled {
-  display: none;
+  opacity: 0;
 }
 .swiper-button-next-s.swiper-button-disabled {
-  display: none;
+  opacity: 0;
 }
 
 .column-bottom {
@@ -327,8 +328,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    @media (max-width:$mobile){
-       display: none; 
+    @media (max-width: $mobile) {
+      display: none;
     }
   }
 

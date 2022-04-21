@@ -165,3 +165,40 @@ const swiperNine = new Swiper(".courses__swiperr", {
   //   },
   // },
 });
+
+const swiperTen = new Swiper(".videos-sl__slider", {
+  // Optional parameters
+
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  navigation: {
+    nextEl: ".swiper-button-next-s",
+    prevEl: ".swiper-button-prev-s",
+  },
+  // breakpoints: {
+  //   0: {
+  //     spaceBetween: 8,
+  //   },
+  //   768: {
+  //     spaceBetween: 16,
+  //   },
+  // },
+});
+const swiperEleven = new Swiper(".videos-sl2__slider", {
+  // Optional parameters
+
+  slidesPerView: "auto",
+  spaceBetween: 24,
+  navigation: {
+    nextEl: ".swiper-button-next-s",
+    prevEl: ".swiper-button-prev-s",
+  },
+  // breakpoints: {
+  //   0: {
+  //     spaceBetween: 8,
+  //   },
+  //   768: {
+  //     spaceBetween: 16,
+  //   },
+  // },
+});
