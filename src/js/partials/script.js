@@ -51,12 +51,14 @@ if (instrument) {
   for (let i = 0; i < instrument.length; i++) {
     instrument[i].addEventListener("mouseover", function (e) {
       // this.classList.add("active");
+      instrument[i].classList.add("sssh");
       instrumentImage[i].style.left = "0";
       instrumentImage[i].classList.add("ssshow");
       openn.classList.remove("opennn");
     });
     instrument[i].addEventListener("mouseout", function (e) {
       // this.classList.remove("active");
+      instrument[i].classList.remove("sssh");
       instrumentImage[i].style.left = "-100vw";
       instrumentImage[i].classList.remove("ssshow");
       ifOpen();
