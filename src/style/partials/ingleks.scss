@@ -79,15 +79,21 @@
 .numbers {
   // .numbers__list
   &__list {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    flex-wrap: wrap;
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     @media (max-width: $mobileSmall) {
+      grid-template-columns: 1fr;
       gap: 16px;
     }
   }
-
+  // .numbers__item
+  &__item {
+    max-width: 300px;
+  }
   // .numbers__number
   &__number {
     font-style: normal;

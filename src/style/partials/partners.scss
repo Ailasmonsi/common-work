@@ -30,8 +30,19 @@
   // .partner__link-mob
   &__link-mob {
     display: none;
-    @media (max-width: $pc) {
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    overflow: hidden;
+    & img {
+      max-width: 90px;
       display: block;
+    }
+    @media (max-width: $pc) {
+      display: flex;
     }
   }
   // .partner__text
@@ -102,5 +113,3 @@
     display: none;
   }
 }
-
-
