@@ -168,3 +168,17 @@ tippy("#tippy-point-5", {
   content:
     "Родилась идея создания сервиса, который помогает достигать карьерной цели",
 });
+
+
+ $(document).ready(function () {
+   $("#slider_price, #slider_duration").ionRangeSlider({
+     type: "double",
+     min: 0,
+     max: 1000,
+     from: 200,
+     to: 500,
+     grid: false,
+     hide_min_max: true,
+     hide_from_to: true,
+   });
+ });

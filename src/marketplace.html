@@ -1,733 +1,1304 @@
 //= template/inc/start.html
 //= template/inc/header.html
 
-<div class="f-sec">
-    <form id="w0" class="" action="/course/index" method="get">
-        <div class="f-sec__wrap">
-            <div class="f-sec__wrap_cont">
-                <div class="f-sec__wrap_cont_row">
-                    <div class="f-sec__wrap_cont_row_col">
-                        <div class="f-sec__wrap_cont_row_col_elem1">
-                            <a class="f-sec__wrap_cont_row_col_elem1_text1" href="">Курсы</a>
-                        </div>
-                        <div class="f-sec__wrap_cont_row_col_elem1">
-                            <a class="f-sec__wrap_cont_row_col_elem1_text2" href="">Вебинары</a>
-                        </div>
-                    </div>
-                    <div class="f-sec__wrap_cont_row_col">
-                        <div class="f-sec__wrap_cont_row_col_elem2">
-                            <div class="f-sec__wrap_cont_row_col_elem2_part">
-                                <div class="f-sec__wrap_cont_row_col_elem2_part_text">Сортировать:</div>
-                            </div>
-                            <div class="f-sec__wrap_cont_row_col_elem2_part">
-                                <select class="f-sec__wrap_cont_row_col_elem2_part_select" name="" id="">
-                                    <option value="0" selected="" data-select2-id="2">Не выбрано</option>
-                                    <option value="1">Стоимость по возрастанию</option>
-                                    <option value="2">Стоимость по убыванию</option>
-                                    <option value="3">Длительность по возрастанию</option>
-                                    <option value="4">Длительность по убыванию</option>
-                                </select>
-                                
-                                <div class="f-sec__wrap_cont_row_col_elem2_part_img"><img src="" alt=""></div>
-                            </div>
-                        </div>
-                        <div class="f-sec__wrap_cont_row_col_elem2">
-                            <div class="f-sec__wrap_cont_row_col_elem2_box">
-                                <div class="f-sec__wrap_cont_row_col_elem2_box_in">
-                                    <svg class="f-sec__wrap_cont_row_col_elem2_box_in_img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 6L20 6" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M8 4V8" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M16 10V14" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M8 16V20" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M4 12L20 12" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M4 18L20 18" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                     </svg>
-                                    <div class="f-sec__wrap_cont_row_col_elem2_box_in_text">Скрыть фильтры</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="marketplace">
+  <div class="marketplace__main mrpl">
+    <div class="container">
+      <div class="mrpl__top mrpl-t">
+        <div class="mrpl-t__titles">
+          <h1 class="mrpl-t__title">Курсы</h1>
+          <a href="#" class="mrpl-t__title">Вебинары</a>
         </div>
-        <div class="f-sec__wrap-adap">
-            <div class="f-sec__wrap-adap_cont">
-                <div class="f-sec__wrap-adap_cont_row">
-                    <div class="f-sec__wrap-adap_cont_row_col">
-                        <div class="f-sec__wrap-adap_cont_row_col_elem1">
-                            <a class="f-sec__wrap_cont_row_col_elem1_text1" href="">Курсы</a>
-                        </div>
-                        <div class="f-sec__wrap-adap_cont_row_col_elem1">
-                            <a class="f-sec__wrap_cont_row_col_elem1_text2" href="">Вебинары</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-sec__wrap-adap_cont_row">
-                    <div class="f-sec__wrap-adap_cont_row_col">
-                        <div class="f-sec__wrap-adap_cont_row_col_elem2">
-                            <div class="f-sec__wrap-adap_cont_row_col_elem2_part">
-                                <div class="f-sec__wrap-adap_cont_row_col_elem2_part_text">Сортировать:</div>
-                            </div>
-                            <div class="f-sec__wrap-adap_cont_row_col_elem2_part">
-                                <select class="f-sec__wrap-adap_cont_row_col_elem2_part_select" name="" id="">
-                                    <option value="0" selected="" data-select2-id="2">Не выбрано</option>
-                                    <option value="1">Стоимость по возрастанию</option>
-                                    <option value="2">Стоимость по убыванию</option>
-                                    <option value="3">Длительность по возрастанию</option>
-                                    <option value="4">Длительность по убыванию</option>
-                                </select>
-                                
-                                <div class="f-sec__wrap-adap_cont_row_col_elem2_part_img"><img src="" alt=""></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-sec__wrap-adap_cont_row">
-                    <div class="f-sec__wrap-adap_cont_row_col">
-                        <div class="f-sec__wrap-adap_cont_row_col_elem2">
-                            <div class="f-sec__wrap-adap_cont_row_col_elem2_box">
-                                <div class="f-sec__wrap-adap_cont_row_col_elem2_box_in">
-                                    <svg class="f-sec__wrap-adap_cont_row_col_elem2_box_in_img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4 6L20 6" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M8 4V8" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M16 10V14" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M8 16V20" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
-                                        <path d="M4 12L20 12" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M4 18L20 18" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                     </svg>
-                                    <div class="f-sec__wrap-adap_cont_row_col_elem2_box_in_text">Скрыть фильтры</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="f-sec__main">
-            <div class="f-sec__main_cont">
-                <div class="f-sec__main_cont_line">
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Категория</div>
-                        <select class="f-sec__main_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                            <option value="4">Бизнес</option>
-                            <option value="5">Маркетинг</option>
-                            <option value="6">Право</option>
-                            <option value="7">Развитие</option>
-                            <option value="8">Школа</option>
-                            <option value="9">Медицина</option>
-                            <option value="13">Разработка</option>
-                            <option value="14">Финансы</option>
-                            <option value="15">Другое</option>
-                            <option value="16">Языки</option>
-                         </select>
-                    </div>
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Подкатегория</div>
-                        <select class="f-sec__main_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                         </select>
-                    </div>
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Цена</div>
-                        <div class="slider_values">
-                            <div class="slider_value__min" id="price_value__min">от <span>1000</span> ₽</div>
-                            <div class="slider_value__max" id="price_value__max">до <span>100000</span> ₽</div>
-                        </div>
-                        <input type="text" id="slider_price" class="form-control" name="CourseSearch[price]" value="1000,100000" disabled="" data-krajee-slider="slider_0dc9341e" style="display: none;" data-value="1000,100000">
-                    </div>
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Тип программы</div>
-                        <div id="price-checkbox-list-inline" class="list-group" custom="" inline="">
-                            <input type="checkbox" id="price_Платная" name="CourseSearch[types_pay][]" value="Платная"
-                               ><label class="list-group-item" for="price_Платная">Платная</label>
-                            <input type="checkbox" id="price_Бесплатная" name="CourseSearch[types_pay][]" value="Бесплатная">
-                            <label class="list-group-item" for="price_Бесплатная">Бесплатная</label>
-                        </div>
-                    </div>
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Наставник</div>
-                        <select class="f-sec__main_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                         </select>
-                    </div>
-                </div>
-                <div class="f-sec__main_cont_line">
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Начисление баллов</div>
-                        <select class="f-sec__main_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                         </select>
-                    </div>
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Сертификат</div>
-                        <select class="f-sec__main_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                         </select>
-                    </div>
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Длительность</div>
-                        <div class="slider_values">
-                            <div class="slider_value__min" id="price_value__min">от <span>2</span> месяцев</div>
-                            <div class="slider_value__max" id="price_value__max">до <span>2</span> лет</div>
-                        </div>
-                        <input type="text" id="slider_price" class="form-control" name="CourseSearch[price]" value="1000,100000" disabled="" data-krajee-slider="slider_0dc9341e" style="display: none;" data-value="1000,100000">
-                    </div>
-                    <div class="f-sec__main_cont_line_elem">
-                        <div class="f-sec__main_cont_line_elem_text">Уровень сложности</div>
-                        <div id="price-checkbox-list-inline" class="list-group" custom="" inline="">
-                            <input type="checkbox" id="price_нач" name="CourseSearch[types_pay][]" value="нач">
-                            <label class="list-group-item" for="price_нач">Начальный</label>
-                            <input type="checkbox" id="price_прод" name="CourseSearch[types_pay][]" value="прод">
-                            <label class="list-group-item" for="price_прод">Продвинутый</label>
-                            <input type="checkbox" id="price_проф" name="CourseSearch[types_pay][]" value="проф">
-                            <label class="list-group-item" for="price_проф">Профессиональный</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="f-sec__main-adap">
-            <div class="f-sec__main-adap_cont">
-                <div class="f-sec__main-adap_cont_line">
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Категория</div>
-                        <select class="f-sec__main-adap_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                            <option value="4">Бизнес</option>
-                            <option value="5">Маркетинг</option>
-                            <option value="6">Право</option>
-                            <option value="7">Развитие</option>
-                            <option value="8">Школа</option>
-                            <option value="9">Медицина</option>
-                            <option value="13">Разработка</option>
-                            <option value="14">Финансы</option>
-                            <option value="15">Другое</option>
-                            <option value="16">Языки</option>
-                         </select>
-                    </div>
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Подкатегория</div>
-                        <select class="f-sec__main-adap_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                         </select>
-                    </div>
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Цена</div>
-                        <div class="slider_values">
-                            <div class="slider_value__min" id="price_value__min">от <span>1000</span> ₽</div>
-                            <div class="slider_value__max" id="price_value__max">до <span>100000</span> ₽</div>
-                        </div>
-                        <input type="text" id="slider_price" class="form-control" name="CourseSearch[price]" value="1000,100000" disabled="" data-krajee-slider="slider_0dc9341e" style="display: none;" data-value="1000,100000">
-                    </div>
-                </div>
-                <div class="f-sec__main-adap_cont_line">
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Тип программы</div>
-                        <div id="price-checkbox-list-inline" class="list-group" custom="" inline="">
-                            <input type="checkbox" id="price_Платная" name="CourseSearch[types_pay][]" value="Платная"
-                               ><label class="list-group-item" for="price_Платная">Платная</label>
-                            <input type="checkbox" id="price_Бесплатная" name="CourseSearch[types_pay][]" value="Бесплатная">
-                            <label class="list-group-item" for="price_Бесплатная">Бесплатная</label>
-                        </div>
-                    </div>
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Подкатегория</div>
-                        <select class="f-sec__main-adap_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                         </select>
-                    </div>
-                </div>
-                <div class="f-sec__main-adap_cont_line">
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Категория</div>
-                        <select class="f-sec__main_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                            <option value="4">Бизнес</option>
-                            <option value="5">Маркетинг</option>
-                            <option value="6">Право</option>
-                            <option value="7">Развитие</option>
-                            <option value="8">Школа</option>
-                            <option value="9">Медицина</option>
-                            <option value="13">Разработка</option>
-                            <option value="14">Финансы</option>
-                            <option value="15">Другое</option>
-                            <option value="16">Языки</option>
-                         </select>
-                    </div>
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Подкатегория</div>
-                        <select class="f-sec__main-adap_cont_line_elem_select">
-                            <option value="" data-select2-id="4">Выберите ...</option>
-                            <option value="1">Дизайн</option>
-                            <option value="3">Менеджмент</option>
-                         </select>
-                    </div>
-                </div>
-                <div class="f-sec__main-adap_cont_line">
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Длительность</div>
-                        <div class="slider_values">
-                            <div class="slider_value__min" id="price_value__min">от <span>2</span> месяцев</div>
-                            <div class="slider_value__max" id="price_value__max">до <span>2</span> лет</div>
-                        </div>
-                        <input type="text" id="slider_price" class="form-control" name="CourseSearch[price]" value="1000,100000" disabled="" data-krajee-slider="slider_0dc9341e" style="display: none;" data-value="1000,100000">
-                    </div>
-                    <div class="f-sec__main-adap_cont_line_elem">
-                        <div class="f-sec__main-adap_cont_line_elem_text">Уровень сложности</div>
-                        <div id="price-checkbox-list-inline" class="list-group" custom="" inline="">
-                            <input type="checkbox" id="price_нач" name="CourseSearch[types_pay][]" value="нач">
-                            <label class="list-group-item" for="price_нач">Начальный</label>
-                            <input type="checkbox" id="price_прод" name="CourseSearch[types_pay][]" value="прод">
-                            <label class="list-group-item" for="price_прод">Продвинутый</label>
-                            <input type="checkbox" id="price_проф" name="CourseSearch[types_pay][]" value="проф">
-                            <label class="list-group-item" for="price_проф">Профессиональный</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="f-sec__main-adap2">
-            <div class="f-sec__main-adap2_cont">
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Категория</div>
-                    <select class="f-sec__mai-adap2_cont_elem_select">
-                        <option value="" data-select2-id="4">Выберите ...</option>
-                        <option value="1">Дизайн</option>
-                        <option value="3">Менеджмент</option>
-                        <option value="4">Бизнес</option>
-                        <option value="5">Маркетинг</option>
-                        <option value="6">Право</option>
-                        <option value="7">Развитие</option>
-                        <option value="8">Школа</option>
-                        <option value="9">Медицина</option>
-                        <option value="13">Разработка</option>
-                        <option value="14">Финансы</option>
-                        <option value="15">Другое</option>
-                        <option value="16">Языки</option>
-                     </select>
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Подкатегория</div>
-                    <select class="f-sec__main-adap_cont_elem_select">
-                        <option value="" data-select2-id="4">Выберите ...</option>
-                        <option value="1">Дизайн</option>
-                        <option value="3">Менеджмент</option>
-                     </select>
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Цена</div>
-                    <div class="slider_values">
-                        <div class="slider_value__min" id="price_value__min">от <span>1000</span> ₽</div>
-                        <div class="slider_value__max" id="price_value__max">до <span>100000</span> ₽</div>
-                    </div>
-                    <input type="text" id="slider_price" class="form-control" name="CourseSearch[price]" value="1000,100000" disabled="" data-krajee-slider="slider_0dc9341e" style="display: none;" data-value="1000,100000">
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Тип программы</div>
-                    <div id="price-checkbox-list-inline" class="list-group" custom="" inline="">
-                        <input type="checkbox" id="price_Платная" name="CourseSearch[types_pay][]" value="Платная"
-                           ><label class="list-group-item" for="price_Платная">Платная</label>
-                        <input type="checkbox" id="price_Бесплатная" name="CourseSearch[types_pay][]" value="Бесплатная">
-                        <label class="list-group-item" for="price_Бесплатная">Бесплатная</label>
-                    </div>
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Подкатегория</div>
-                    <select class="f-sec__main-adap2_cont_elem_select">
-                        <option value="" data-select2-id="4">Выберите ...</option>
-                        <option value="1">Дизайн</option>
-                        <option value="3">Менеджмент</option>
-                     </select>
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Категория</div>
-                    <select class="f-sec__mai-adap2_cont_elem_select">
-                        <option value="" data-select2-id="4">Выберите ...</option>
-                        <option value="1">Дизайн</option>
-                        <option value="3">Менеджмент</option>
-                        <option value="4">Бизнес</option>
-                        <option value="5">Маркетинг</option>
-                        <option value="6">Право</option>
-                        <option value="7">Развитие</option>
-                        <option value="8">Школа</option>
-                        <option value="9">Медицина</option>
-                        <option value="13">Разработка</option>
-                        <option value="14">Финансы</option>
-                        <option value="15">Другое</option>
-                        <option value="16">Языки</option>
-                     </select>
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Подкатегория</div>
-                    <select class="f-sec__main-adap_cont_elem_select">
-                        <option value="" data-select2-id="4">Выберите ...</option>
-                        <option value="1">Дизайн</option>
-                        <option value="3">Менеджмент</option>
-                     </select>
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Длительность</div>
-                    <div class="slider_values">
-                        <div class="slider_value__min" id="price_value__min">от <span>2</span> месяцев</div>
-                        <div class="slider_value__max" id="price_value__max">до <span>2</span> лет</div>
-                    </div>
-                    <input type="text" id="slider_price" class="form-control" name="CourseSearch[price]" value="1000,100000" disabled="" data-krajee-slider="slider_0dc9341e" style="display: none;" data-value="1000,100000">
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div class="f-sec__main-adap2_cont_elem_text">Уровень сложности</div>
-                    <div id="price-checkbox-list-inline" class="list-group" custom="" inline="">
-                        <input type="checkbox" id="price_нач" name="CourseSearch[types_pay][]" value="нач">
-                        <label class="list-group-item" for="price_нач">Начальный</label>
-                        <input type="checkbox" id="price_прод" name="CourseSearch[types_pay][]" value="прод">
-                        <label class="list-group-item" for="price_прод">Продвинутый</label>
-                    </div>
-                </div>
-                <div class="f-sec__main-adap2_cont_elem">
-                    <div id="price-checkbox-list-inline" class="list-group" custom="" inline="">
-                        <input type="checkbox" id="price_проф" name="CourseSearch[types_pay][]" value="проф">
-                        <label class="list-group-item" for="price_проф">Профессиональный</label>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="f-sec__lo">
-            <div class="f-sec__lo_lo-cont">
-                <div class="f-sec__lo_lo-cont_row">
-                    <div class="f-sec__lo_lo-cont_row_elem">
-                        <div class="f-sec__lo_lo-cont_row_elem_box">
-                            <button type="submit" class="f-sec__lo_lo-cont_row_elem_box_text">Применить фильтры</button>
-                            
-                        </div>
-                    </div>
-                    <a class="f-sec__lo_lo-cont_row_elem" href="/course">
-                        <svg class="f-sec__lo_lo-cont_row_elem_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M15.435 15.435L15.4314 15.4387L12.8965 18H8.98276C8.48155 18 7.99859 17.8118 7.62953 17.4727L6.93482 16.8343L4.82844 14.7279C4.04739 13.9469 4.04739 12.6805 4.82844 11.8995L8.36397 8.36396L11.8995 4.82843C12.6806 4.04738 13.9469 4.04738 14.7279 4.82843L18.9706 9.07107C19.7516 9.85212 19.7516 11.1184 18.9706 11.8995L15.435 15.435Z" stroke="#A897BD" stroke-width="2"></path>
-                           <path d="M10.3137 17H19.3137C19.866 17 20.3137 17.4477 20.3137 18C20.3137 18.5523 19.866 19 19.3137 19H10.3137V17Z" fill="#A897BD"></path>
-                           <path d="M15.3137 15L9.31372 9L8.81372 8L13.3137 4L19.8137 10.5L15.3137 15Z" fill="#A897BD"></path>
-                        </svg>
-                        <div class="f-sec__lo_lo-cont_row_elem_text">Очистить</div>
-                     </a>
-                </div>
-            </div>
-        </div>
-        <div class="f-sec__lo-adap">
-            <div class="f-sec__lo-adap_cont">
-                <div class="f-sec__lo-adap_cont_row">
-                    <div class="f-sec__lo_lo-cont_row_elem">
-                        <div class="f-sec__lo_lo-cont_row_elem_box">
-                            <button type="submit" class="f-sec__lo_lo-cont_row_elem_box_text">Применить фильтры</button>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="f-sec__lo-adap_cont_row">
-                    <a class="f-sec__lo_lo-cont_row_elem" href="/course">
-                        <svg class="f-sec__lo_lo-cont_row_elem_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                           <path d="M15.435 15.435L15.4314 15.4387L12.8965 18H8.98276C8.48155 18 7.99859 17.8118 7.62953 17.4727L6.93482 16.8343L4.82844 14.7279C4.04739 13.9469 4.04739 12.6805 4.82844 11.8995L8.36397 8.36396L11.8995 4.82843C12.6806 4.04738 13.9469 4.04738 14.7279 4.82843L18.9706 9.07107C19.7516 9.85212 19.7516 11.1184 18.9706 11.8995L15.435 15.435Z" stroke="#A897BD" stroke-width="2"></path>
-                           <path d="M10.3137 17H19.3137C19.866 17 20.3137 17.4477 20.3137 18C20.3137 18.5523 19.866 19 19.3137 19H10.3137V17Z" fill="#A897BD"></path>
-                           <path d="M15.3137 15L9.31372 9L8.81372 8L13.3137 4L19.8137 10.5L15.3137 15Z" fill="#A897BD"></path>
-                        </svg>
-                        <div class="f-sec__lo_lo-cont_row_elem_text">Очистить</div>
-                     </a>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
 
-<div class="filters">
-    <div class="filters__cont">
-        <div class="filters__cont_elem1">
-            <div class="filters__cont_elem_text">
-                Дизайн
-            </div>
-            <div class="filters__cont_elem1_svg">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8.25L8.5 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M8.5 8.25L16 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
+        <div class="mrpl-t__buttons">
+          <div class="course-s__selects input__con input__con-cust">
+            <p class="input__prev-text main__text-neutral">Сортировать:</p>
+            <label class="main__select cust-select">
+              <select
+                name="category"
+                class="course-s__select main__selectt-small"
+              >
+                <option class="main__option" value="design">Не выбрано</option>
+                <option class="main__option" value="option1">
+                  Стоимость по возрастанию
+                </option>
+                <option class="main__option" value="option2">
+                  Стоимость по убыванию
+                </option>
+                <option class="main__option" value="option3">
+                  Длительность по возрастанию
+                </option>
+                <option class="main__option" value="option4">
+                  Длительность по убыванию
+                </option>
+              </select>
+            </label>
+          </div>
+
+          <button class="mrpl-t__buttons_hide">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 6L20 6"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M8 4V8"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16 10V14"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8 16V20"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4 12L20 12"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M4 18L20 18"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p>Скрыть фильтры</p>
+          </button>
         </div>
-        <div class="filters__cont_elem2">
-            <div class="filters__cont_elem_text">
-                Web-дизайн
-            </div>
-            <div class="filters__cont_elem1_svg">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8.25L8.5 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M8.5 8.25L16 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
-        </div>
-        <div class="filters__cont_elem3">
-            <div class="filters__cont_elem_text">
-                Платные
-            </div>
-            <div class="filters__cont_elem1_svg">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8.25L8.5 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M8.5 8.25L16 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
-        </div>
-        <div class="filters__cont_elem4">
-            <div class="filters__cont_elem_text">
-                Начальный уровень
-            </div>
-            <div class="filters__cont_elem1_svg">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8.25L8.5 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M8.5 8.25L16 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
-        </div>
-        <div class="filters__cont_elem5">
-            <div class="filters__cont_elem_text">
-                Продвинутый уровень
-            </div>
-            <div class="filters__cont_elem1_svg">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 8.25L8.5 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M8.5 8.25L16 15.75" stroke="#D0C2DE" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-            </div>
-        </div>
+      </div>
     </div>
-</div>
 
-<div class="plates">
-    <div class="plates__cont">
-        <div class="plates__cont_line">
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
+    <div class="mrpl__filters mrpl-f">
+      <form action="#">
+        <div class="mrpl-f__body mrpl-fb">
+          <div class="container">
+            <div class="mrpl-f__con">
+              <div class="mrpl-fb__selects mrpl-f__con_item">
+                <div class="course-s__selects input__con input__con-custt">
+                  <p class="input__prev-text main__text-neutral">Категория</p>
+                  <label class="main__selectt">
+                    <select
+                      name="category"
+                      class="course-s__select main__selectt-small"
+                    >
+                      <option class="main__option" value="design">
+                        Дизайн
+                      </option>
+                      <option class="main__option" value="option1">
+                        Стоимость по возрастанию
+                      </option>
+                      <option class="main__option" value="option2">
+                        Стоимость по убыванию
+                      </option>
+                      <option class="main__option" value="option3">
+                        Длительность по возрастанию
+                      </option>
+                      <option class="main__option" value="option4">
+                        Длительность по убыванию
+                      </option>
+                    </select>
+                  </label>
+                </div>
+                <div class="course-s__selects input__con input__con-custt">
+                  <p class="input__prev-text main__text-neutral">
+                    Подкатегория
+                  </p>
+                  <label class="main__selectt">
+                    <select
+                      name="category"
+                      class="course-s__select main__selectt-small"
+                    >
+                      <option class="main__option" value="design">
+                        Web-дизайн
+                      </option>
+                      <option class="main__option" value="option1">
+                        Стоимость по возрастанию
+                      </option>
+                      <option class="main__option" value="option2">
+                        Стоимость по убыванию
+                      </option>
+                      <option class="main__option" value="option3">
+                        Длительность по возрастанию
+                      </option>
+                      <option class="main__option" value="option4">
+                        Длительность по убыванию
+                      </option>
+                    </select>
+                  </label>
+                </div>
+                <div class="course-s__selects input__con input__con-custt">
+                  <p class="input__prev-text main__text-neutral">
+                    Начисление баллов
+                  </p>
+                  <label class="main__selectt">
+                    <select
+                      name="category"
+                      class="course-s__select main__selectt-small"
+                    >
+                      <option class="main__option" value="design">Есть</option>
+                      <option class="main__option" value="option1">Есть</option>
+                      <option class="main__option" value="option2">Нет</option>
+                    </select>
+                  </label>
+                </div>
+                <div class="course-s__selects input__con input__con-custt">
+                  <p class="input__prev-text main__text-neutral">Сертификат</p>
+                  <label class="main__selectt">
+                    <select
+                      name="category"
+                      class="course-s__select main__selectt-small"
+                    >
+                      <option class="main__option" value="design">
+                        С сертификатом
+                      </option>
+                      <option class="main__option" value="option1">
+                        Стоимость по возрастанию
+                      </option>
+                      <option class="main__option" value="option2">
+                        Стоимость по убыванию
+                      </option>
+                      <option class="main__option" value="option3">
+                        Длительность по возрастанию
+                      </option>
+                      <option class="main__option" value="option4">
+                        Длительность по убыванию
+                      </option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+
+              <div class="mrpl-fb__ranges mrpl-f__con_item">
+                <div class="mrpl-fb__range">
+                  <div class="input__prev-text main__text-neutral">Цена</div>
+                  <div class="slider_valuess">
+                    <div class="slider_value__minn" id="price_value__minn">
+                      от <span>1000</span> ₽
+                    </div>
+                    <div class="slider_value__maxx" id="price_value__maxx">
+                      до <span>100000</span> ₽
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    id="slider_price"
+                    class="form-control"
+                    name="CourseSearch[price]"
+                    value="1000,100000"
+                    disabled=""
+                    data-krajee-slider="slider_0dc9341e"
+                    style="display: none"
+                    data-value="1000,100000"
+                  />
+                </div>
+                <div class="mrpl-fb__range">
+                  <div class="input__prev-text main__text-neutral">Цена</div>
+                  <div class="slider_valuess">
+                    <div class="slider_value__minn" id="price_value__min">
+                      от <span>1000</span> ₽
+                    </div>
+                    <div class="slider_value__maxx" id="price_value__max">
+                      до <span>100000</span> ₽
+                    </div>
+                  </div>
+                  <input
+                    type="text"
+                    id="slider_price"
+                    class="form-control"
+                    name="CourseSearch[price]"
+                    value="1000,100000"
+                    disabled=""
+                    data-krajee-slider="slider_0dc9341e"
+                    style="display: none"
+                    data-value="1000,100000"
+                  />
+                </div>
+              </div>
+
+              <div class="mrpl-fb__checkboxes mrpl-f__con_item">
+                <div class="mrpl-fb__checkboxes_row">
+                  <div class="companies-f__form_con">
+                    <div class="input__prev-text main__text-neutral">
+                      Тип программы
+                    </div>
+                    <div class="companies-f__form_labels no-margin">
+                      <label class="companies-f__on-self">
+                        <input type="checkbox" name="on-self" id="on-self" />
+                        <div class="companies-f__on-self_fake"></div>
+                        <div class="companies-f__on-self_text">Платная</div>
+                        <div class="companies-f__on-self_border"></div>
+                      </label>
+                      <label class="companies-f__on-edwica">
+                        <input
+                          type="checkbox"
+                          name="on-edwica"
+                          id="on-edwica"
+                        />
+                        <div class="companies-f__on-edwica_fake"></div>
+                        <div class="companies-f__on-edwica_text">
+                          Бесплатная
+                        </div>
+                        <div class="companies-f__on-edwica_border"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="course-s__selects input__con input__con-custt">
+                    <p class="input__prev-text main__text-neutral">Категория</p>
+                    <label class="main__selectt">
+                      <select
+                        name="category"
+                        class="course-s__select main__selectt-small"
+                      >
+                        <option class="main__option" value="design">
+                          С наставником
+                        </option>
+                        <option class="main__option" value="option1">
+                          Без наставника
+                        </option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="mrpl-fb__checkboxes_row">
+                  <div class="companies-f__form_con">
+                    <div class="input__prev-text main__text-neutral">
+                      Уровень сложности
+                    </div>
+                    <div
+                      class="companies-f__form_labels no-margin companies-f__form_labels-c"
+                    >
+                      <label class="companies-f__on-self">
+                        <input type="checkbox" name="on-self" id="on-self" />
+                        <div class="companies-f__on-self_fake"></div>
+                        <div class="companies-f__on-self_text">Начальный</div>
+                        <div class="companies-f__on-self_border"></div>
+                      </label>
+                      <label class="companies-f__on-edwica">
+                        <input
+                          type="checkbox"
+                          name="on-edwica"
+                          id="on-edwica"
+                        />
+                        <div class="companies-f__on-edwica_fake"></div>
+                        <div class="companies-f__on-edwica_text">
+                          Продвинутый
+                        </div>
+                        <div class="companies-f__on-edwica_border"></div>
+                      </label>
+                      <label class="companies-f__on-edwica">
+                        <input type="checkbox" name="profi" id="profi" />
+                        <div class="companies-f__on-edwica_fake"></div>
+                        <div class="companies-f__on-edwica_text">
+                          Профессиональный
+                        </div>
+                        <div class="companies-f__on-edwica_border"></div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="plates__cont_line">
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
+        <div class="pad-tb">
+          <div class="container">
+            <div class="companies-f__buttons">
+              <button class="companies-f__submit main__btn" type="submit">
+                Применить фильтры
+              </button>
+              <button class="companies-f__reset" type="reset">Очистить</button>
+            </div>
+          </div>
         </div>
-        <div class="plates__cont_line">
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-        </div>
-        <div class="plates__cont_line">
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-            //= template/course/card/card-course.html
-        </div>
+      </form>
     </div>
-</div>
 
-<div class="plate-adap1">
-    <div class="plates-adap1__cont">
-        <div class="plates-adap1__cont_line">
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap1__cont_line">
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap1__cont_line">
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap1__cont_line">
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap1__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
+    <div class="mrpl__filters-tags mrpl-ft">
+      <div class="container">
+        <ul class="mrpl-ft__list">
+          <li class="mrpl-ft__item">
+            <p>Дизайн</p>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8.25L8.5 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.5 8.25L16 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+          <li class="mrpl-ft__item">
+            <p>Web-дизайн</p>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8.25L8.5 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.5 8.25L16 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+          <li class="mrpl-ft__item">
+            <p>Платные</p>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8.25L8.5 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.5 8.25L16 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+          <li class="mrpl-ft__item">
+            <p>Начальный уровень</p>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8.25L8.5 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.5 8.25L16 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+          <li class="mrpl-ft__item">
+            <p>Продвинутый уровень</p>
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8.25L8.5 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.5 8.25L16 15.75"
+                stroke="#D0C2DE"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </li>
+        </ul>
+      </div>
     </div>
-</div>
 
-<div class="plate-adap2">
-    <div class="plates-adap2__cont">
-        <div class="plates-adap2__cont_line">
-            <div class="plates-adap2__cont_line_elem">
-                //= template/course/card/card-course.html
+    <div class="carrds">
+      <div class="container">
+        <ul class="cardds__list">
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
             </div>
-            <div class="plates-adap2__cont_line_elem">
-                //= template/course/card/card-course.html
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
             </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="carrd">
+            <div class="carrd__body">
+              <div class="slide-body__top">
+                <div class="slide-body__top_row">
+                  <a href="#" class="slide-body__form_logo">
+                    <img src="../../../img/icon_skillbox.svg" alt="" />
+                  </a>
+                  <a href="#" class="slide-body__form_favorite">
+                    <img src="../../../img/unfavorite.svg" alt="" />
+                  </a>
+                </div>
+                <div class="slide-body__top_span">
+                  <p>Популярное</p>
+                </div>
+              </div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <div class="slide-content__subtitle">Skillbox</div>
+                  <a href="#" class="slide-content__title"
+                    >Управление проектами</a
+                  >
+                  <div class="slide-content__info">
+                    <p class="slide-content__info_1">Начальный уровень</p>
+                    <p class="slide-content__info_2">
+                      Наставник: <span>Есть</span>
+                    </p>
+                    <p class="slide-content__info_3">
+                      Сертификат: <span>Есть</span>
+                    </p>
+                  </div>
+                  <div class="slide-content__price">
+                    <div class="slide-content__price_price">120 000 ₽</div>
+                    <div class="slide-content__price_period">1,2 года</div>
+                  </div>
+                </div>
+                <a href="#" class="slide-content__go_btn">
+                  Перейти на Skillbox
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="pagination">
+          <div class="pagination__inner">
+            <a href="#" disabled><i class="fa fa-chevron-left"></i></a>
+            <ul>
+              <li class="pag-li"><a href="#">1</a></li>
+              <li class="pag-li"><a href="#">2</a></li>
+              <li class="pag-li"><a href="#">3</a></li>
+              <li class="pag-li"><a href="#">4</a></li>
+              <li class="pag-li"><a href="">...</a></li>
+              <li class="pag-li"><a href="#">9</a></li>
+            </ul>
+            <a href="#"><i class="fa fa-chevron-right"></i></a>
+          </div>
         </div>
-        <div class="plates-adap2__cont_line">
-            <div class="plates-adap2__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap2__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap2__cont_line">
-            <div class="plates-adap2__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap2__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap2__cont_line">
-            <div class="plates-adap2__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-            <div class="plates-adap2__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="plate-adap3">
-    <div class="plates-adap3__cont">
-        <div class="plates-adap3__cont_line">
-            <div class="plates-adap3__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap3__cont_line">
-            <div class="plates-adap3__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap3__cont_line">
-            <div class="plates-adap3__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap3__cont_line">
-            <div class="plates-adap3__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap3__cont_line">
-            <div class="plates-adap3__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap3__cont_line">
-            <div class="plates-adap3__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap3__cont_line">
-            <div class="plates-adap3__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-        <div class="plates-adap3__cont_line">
-            <div class="plates-adap3__cont_line_elem">
-                //= template/course/card/card-course.html
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class='pagination'>
-    <div class='pagination__inner'>
-      <a href="#" disabled><i class="fa fa-chevron-left"></i></a>
-      <ul>
-        <li><a href='#'>1</a></li>
-        <li><a href='#'>2</a></li>
-        <li><a href='#'>3</a></li>
-        <li><a href='#'>4</a></li>
-        <li><a href="">...</a></li>
-        <li><a href='#'>9</a></li>
-      </ul>
-      <a href=#><i class="fa fa-chevron-right"></i></a>
+      </div>
     </div>
   </div>
-
-
-
+</div>
 
 //= template/footer.html
 //= template/inc/end.html
-
-
-<script>
-    const button = document.querySelector(".f-sec__wrap_cont_row_col_elem2_box");
-    const main = document.querySelector(".f-sec__main");
-    const madap = document.querySelector(".f-sec__main-adap");
-    const lo = document.querySelector(".f-sec__lo");
-    const f = document.querySelector(".f-sec");
-    const button2 = document.querySelector(".f-sec__wrap-adap_cont_row_col_elem2_box");
-    const madap2 = document.querySelector(".f-sec__main-adap2");
-    const ladap = document.querySelector(".f-sec__lo-adap");
-
-    button.addEventListener("click", function () {
-      main.classList.toggle("open");
-      lo.classList.toggle("open");
-      f.classList.toggle("open");
-      madap.classList.toggle("open");
-    });
-
-    button2.addEventListener("click", function () {
-        madap2.classList.toggle("open");
-        ladap.classList.toggle("open");
-    });
-
-	$(document).ready(function(){
-      $("#slider_price,#slider_duration").ionRangeSlider({
-        type: "double",
-        min: 0,
-        max: 1000,
-        from: 200,
-        to: 500,
-        grid: false,
-        hide_min_max: true,
-        hide_from_to: true
-    });
-	});
-</script>
