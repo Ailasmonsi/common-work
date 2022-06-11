@@ -594,7 +594,7 @@
     @media (max-width: $tablet) {
       overflow-x: auto;
       &::-webkit-scrollbar {
-        width: 0;
+       display: none;
       }
       padding: 20px 13px 5px;
     }
@@ -638,7 +638,6 @@
   }
   // .step-n__gap
   &__gap {
-    width: 48px;
     height: 0;
     border-bottom: 2px dashed #dfdbee;
     transition: all 0.3s ease 0s;

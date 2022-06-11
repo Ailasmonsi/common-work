@@ -265,18 +265,21 @@
 
 .cardds__list {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 15px;
   row-gap: 44px;
   @media (max-width: $pc) {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 32px;
   }
-  @media (max-width:$tablet){
-    grid-template-columns: repeat(2, auto);
-    @media (max-width:$mobile){
-       grid-template-columns: auto; 
-    }
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $mobileSmall) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -301,10 +304,9 @@
     height: -moz-fit-content;
     height: fit-content;
     transition: all 0.3s ease 0s;
-    width: 270px;
     overflow: hidden;
-    @media (max-width:$mobile){
-       margin: 0 auto; 
+    @media (max-width: $mobile) {
+      margin: 0 auto;
     }
   }
 }
@@ -348,8 +350,8 @@
 }
 
 .pag-li {
-  @media (max-width:$mobileSmall){
-     width: 32px !important; 
-     height: 32px !important; 
+  @media (max-width: $mobileSmall) {
+    width: 32px !important;
+    height: 32px !important;
   }
 }

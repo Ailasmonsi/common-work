@@ -385,7 +385,6 @@ h6 {
       margin-bottom: 20px;
     }
   }
-
   // .main__text
   &__text {
     font-style: normal;
@@ -491,6 +490,7 @@ h6 {
 
   // .main__btn
   &__btn {
+    cursor: pointer;
     display: block;
     text-align: center;
     font-style: normal;
@@ -511,6 +511,7 @@ h6 {
   }
   // .main__btn-light
   &__btn-light {
+    cursor: pointer;
     display: block;
     text-align: center;
     font-style: normal;
@@ -1141,4 +1142,4 @@ h6 {
 @import "partials/docs";
 @import "partials/about-us";
 @import "partials/marketplace";
-
+@import "partials/prof-class";

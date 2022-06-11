@@ -164,11 +164,13 @@ function formSteps() {
     if (prevBtn.length > 0 || nextBtn.length > 0) {
       if (formStepIndex === 0) {
         prevBtn.forEach((button) => {
-          button.style.display = "none";
+          button.style.opacity = "0";
+          button.style.pointerEvents = "none";
         });
       } else {
         prevBtn.forEach((button) => {
-          button.style.display = "block";
+          button.style.opacity = "1";
+          button.style.pointerEvents = "all";
         });
       }
 
